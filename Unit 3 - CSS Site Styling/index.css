@@ -1,0 +1,425 @@
+/* RESOURCES
+https://www.w3schools.com/cssref/pr_pos_z-index.asp
+https://www.w3schools.com/css/css_positioning.asp
+https://www.w3schools.com/cssref/css_selectors.asp
+https://www.w3schools.com/css/css_dropdowns.asp
+https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_text
+https://www.eatdipole.com/
+https://smashtess.ca/?gclid=Cj0KCQjw8vqGBhC_ARIsADMSd1AFliBEFO0AkljZ-ctq2A9PghNg0JKhP6MWdNzmr7T2OhcB24z63-4aAukrEALw_wcB
+https://css-tricks.com/almanac/properties/j/justify-content/#:~:text=flex%2Dend%20%3A%20items%20are%20packed,with%20equal%20space%20around%20them
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_image_link
+https://www.w3schools.com/tags/att_a_target.asp
+-canva for social media icons
+ */
+
+/* TODO
+- Adjust the width of menu items specifically for each item
+- welcome {}
+- logo {}
+- change contact form to a subscription form and make it like a one-liner on each page
+  - name, email, country
+- change font
+- fix "about the brand" photo make sure it's centered
+- figure out how to get thumbnail in tab yk
+- add frame to photo of me
+ */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Segoe UI", "Georgia", "Times New Roman", "serif";
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* SECTION 1: WELCOME STRIP */
+
+#header-container { display: flex; height: 15vh; padding-top: 0;} /* Welcom strip at the top to include logo, title, and socials bar (on every page) */
+
+#header-logo-container {flex: 16%; padding-top: 0;}
+#header-logo { padding-left: 2vh; top: auto; bottom: auto; height: 11vh; width: auto;  float: left; } /* Logo that is included in welcome strip ^ */
+
+#header-svcrafted{ flex: 68%; align-items: center; text-align: center;}
+#header-svcrafted-img{height: 10vh; left: auto; right: auto; top: 75%; bottom: 25%; align-items: center; left: 50%; }
+
+#header-insta-container, #header-facebook-container, #header-etsy-container { flex: 4%;}
+#header-insta { padding: 6vh 0vh; float: left; height: 3vh; width: auto; }
+#header-facebook { padding: 6vh 0vh; height: 3vh; width: auto; float: left; }
+#header-etsy { float: left; padding: 6vh 0vh; height: 3vh; width: auto;}
+
+#header-padding { flex: 4%; }
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* SECTION 2: DROPDOWN MENU */
+
+#menu { /* WORKS */
+	/* The full-width background colour across the top */
+	background-color: #b8f3ff;
+	
+	margin: 0;
+	padding: 0;
+	
+	width: 100%;
+	height: 7vh;
+
+	z-index: 1;
+	position: relative;
+	display: inline-block;
+
+	align-items: center;
+}
+
+#menu-list { /* WORKS */
+	/* Placement of menu item boxes relative to full-width menu background */
+	list-style-type: none; /* remove bullets */
+
+	margin: 0;
+	padding: 0;	
+}
+
+.menu-item { /* WORKS */
+	/* All menu items that are not dropdowns (In this case, only "Home" */
+
+	background-color: #b8f3ff;
+
+	/* This clears the hyperlink formatting for the text */
+	color: #373A36; 
+	font-size: 12pt;
+	text-decoration: none; 
+
+	/* Text positioning */
+	line-height: 7vh;
+	text-align: center;
+
+	/* float: left; */
+	display: block; 
+	align-items: center;
+
+	margin: 0;
+	padding-top: 0;
+
+	width: 150px;
+	height: 7vh;
+
+}
+
+.menu-item:hover { /* WORKS */
+	background-color: #b8f3ff;
+	color: #8f8f8f;
+}
+
+.dropdown { /* WORKS */ display: inline-block; }
+
+.dropdown-list { /* WORKS */
+	background-color: #b8f3ff;
+	color: #373A36;
+
+	padding-top: 7vh;
+	display: none;
+	text-align: center;
+}
+
+.dropdown-list a { /* WORKS */
+	color: #373A36;
+	text-decoration: none;
+
+	padding: 12px 16px;
+	display: block;
+	text-align: center;
+}
+
+.dropdown-list a:hover { color: #8f8f8f; }
+
+/* WORKS */
+/* These need to be separate because the different menu items have different lists that appear on hover */
+#dropdown-shop:hover #dropdown-shop-items { display: block;}
+#dropdown-help:hover #dropdown-help-items { display: block;}
+#dropdown-custom:hover #dropdown-custom-items { display: block; }
+#dropdown-bulk:hover #dropdown-bulk-items { display: block;}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* SECTION 3: IMAGE STRIP */
+
+#img-strip-container { /* WORKS */
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	height: 45vh;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+}
+
+#img-stickers, #img-stationery, #img-bulk {
+	height: 45vh;
+	width: 10px;
+
+	flex: 20%;
+	object-fit: cover;
+	justify-content: space-around;
+
+	margin: 0;
+	padding: 10px;
+} 
+
+#img-captions-container 
+{
+	margin:0;
+	padding:0;
+
+	display: flex;
+	height: 45vh;
+	justify-content: space-between;
+
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+
+	z-index: 1;
+	text-align: center;
+}
+
+#img-stickers-caption 
+{
+	height: 45vh;
+	flex: 20%;
+	justify-content: space-around;
+}
+#img-stickers:hover, #img-stationery:hover, #img-bulk:hover {
+	opacity: 50%;
+	transition: 0.5s;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* SECTION 4: ABOUT THE BRAND */
+
+.container-side-by-side { /* WORKS */
+	margin: 5vh 0vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+}
+
+#introduction { /* WORKS */
+	position: relative;
+	padding: 25px;
+}
+
+#introduction-img-container { /* WORKS */
+	width: 30%;
+	text-align: center;
+	margin-left: auto;
+	display: inline-block;
+}
+
+#introduction-img { /* WORKS */
+	height: 30vh;
+	width: auto;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+
+	border-width: 7px;
+	border-image: none;
+	border-style: solid;
+	border-radius: 50% 50% 50% 50%;
+	height: 30vh;
+	width: auto;
+	border-color: #ffb9b9;
+}
+
+#introduction-text { /* WORKS */
+	display: inline-block;
+	vertical-align: middle;
+	width: 55%;
+
+	margin-bottom: 0;
+	margin-right: auto;
+	padding-bottom: 0;
+}
+
+#learn-more { /* WORKS */ 
+	text-align: center; 
+	width: 100%;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* SECTION 5: CONNECT WITH ME */
+
+#socials { /* WORKS */
+	align-items: center;
+	text-align: center;
+}
+
+#socials-paragraph { /* WORKS */
+	padding: 10px 0px;
+	text-align: center;
+}
+
+#contact-text { /* WORKS */
+	display: block;
+	text-align: center;
+	width:100%;
+}
+
+#contact-table { /* WORKS */
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2vh;
+}
+
+#contact-table td { /* WORKS */
+	padding: 5px;
+	background-color: #FFFFFF;
+}
+
+#contact-table tr:hover { /* WORKS */ background-color: #f4ffbd; }
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* SECTION 6: CONTACT FORM */
+
+#contact-email-header {
+	padding-top: 2vh;
+}
+
+#contact-part2 {
+	display: block;
+	text-align: center;
+}
+
+#contact-form {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#full_name, #subject, #email, #message {
+	width: 40vh;
+}
+
+#submit {
+	background-color: #FFFFFF;
+	color: #373A36;
+	padding: 1vh 2vh;
+	margin-bottom: 2vh;
+	border-width: 1pt;
+	border-color: #373a36;
+}
+
+#footer {text-align: center; }
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* CLASSES STYLING */
+
+.pink-strip{
+	background-color: #ffeaea;
+	padding: 5px;
+
+	margin: 0;
+	width: 100%;
+}
+
+.white-strip{
+	background-color: #ffffff;
+	padding: 5px;
+
+	margin: 0;
+	width: 100%;
+}
+
+.green-strip{
+	background-color: #f4ffbd;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.blue-strip{
+	background-color: #b8f3ff;
+	padding: 5px;
+	margin: 0;
+	width: 100%;
+}
+
+.grey-strip{
+	background-color: #eeeeee;
+	padding: 5px;
+	margin: 0;
+	width: 100%;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* ELEMENT STYLING */
+
+h1{
+	text-align: center;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+
+h2{ 
+	text-align: center;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+
+h3{
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 2vh;
+}
+
+li { float: left; } /* get block elements to float next to each other */

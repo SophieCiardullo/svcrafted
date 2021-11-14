@@ -1,0 +1,202 @@
+/* TODO */
+
+/* SOURCES */
+
+/* NOTES
+- Copy + Paste Section 1, Section 2, class styling and element styling into all pagews
+*/
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Segoe UI", "Georgia", "Times New Roman", "serif";
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* SECTION 1: WELCOME HEADER */
+
+#welcome{} /* Welcom strip at the top to include logo, title, and socials bar (on every page) */
+#logo{} /* Logo that is included in welcome strip ^ */
+
+#welcome-header{
+	display: block;
+
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#welcome-text{
+	display: block;
+	text-align: center;
+	width:100%;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* SECTION 2: DROPDOWN MENU */
+
+#menu { /* WORKS */
+	/* The full-width background colour across the top */
+	background-color: #dbf9ff;
+	
+	margin: 0;
+	padding: 0;
+	
+	width: 100%;
+	height: 8vh;
+
+	z-index: 1;
+	position: relative;
+	display: inline-block;
+}
+
+#menu-list { /* WORKS */
+	/* Placement of menu item boxes relative to full-width menu background */
+	list-style-type: none; /* remove bullets */
+
+	margin: 0;
+	padding: 0;	
+}
+
+.menu-item { /* WORKS */
+	/* All menu items that are not dropdowns (In this case, only "Home" */
+
+	background-color: #dbf9ff;
+
+	/* This clears the hyperlink formatting for the text */
+	color: #373A36; 
+	font-size: 12pt;
+	text-decoration: none; 
+
+	/* Text positioning */
+	line-height: 8vh;
+	text-align: center;
+
+	float: left;
+	display: block; 
+	align-items: center;
+
+	margin: 0;
+	padding-top: 0;
+
+	width: 150px;
+	height: 8vh;
+}
+
+.menu-item:hover { /* WORKS */
+	background-color: #dbf9ff;
+	color: #8f8f8f;
+}
+
+.dropdown { /* WORKS */ display: inline-block; }
+
+.dropdown-list { /* WORKS */
+	background-color: #dbf9ff;
+	color: #373A36;
+
+	padding-top: 8vh;
+	display: none;
+	text-align: center;
+}
+
+.dropdown-list a { /* WORKS */
+	color: #373A36;
+	text-decoration: none;
+
+	padding: 12px 16px;
+	display: block;
+	text-align: center;
+}
+
+.dropdown-list a:hover { color: #8f8f8f; }
+
+/* WORKS */
+/* These need to be separate because the different menu items have different lists that appear on hover */
+#dropdown-shop:hover #dropdown-shop-items { display: block;}
+#dropdown-help:hover #dropdown-help-items { display: block;}
+#dropdown-custom:hover #dropdown-custom-items { display: block; }
+#dropdown-bulk:hover #dropdown-bulk-items { display: block;}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* CLASSES STYLING */
+
+.pink-strip{
+	background-color: #ffeaea;
+	padding: 5px;
+
+	margin: 0;
+	width: 100%;
+}
+
+.white-strip{
+	background-color: #ffffff;
+	padding: 5px;
+
+	margin: 0;
+	width: 100%;
+}
+
+.green-strip{
+	background-color: #f4ffbd;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.blue-strip{
+	background-color: #dbf9ff;
+	padding: 5px;
+	margin: 0;
+	width: 100%;
+}
+
+.grey-strip{
+	background-color: #eeeeee;
+	padding: 5px;
+	margin: 0;
+	width: 100%;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* ELEMENT STYLING */
+
+h1{
+	text-align: center;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+
+h2{ 
+	text-align: center;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+
+h3{
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 2vh;
+}
+
+li { float: left; } /* get block elements to float next to each other */

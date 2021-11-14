@@ -1,0 +1,130 @@
+<!-- COMP 266: Unit 2 -->
+<!-- Sophie Ciardullo - 06/15/2021 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+	<head>
+		<title>Home Page</title>
+		<link rel="stylesheet" href="custom_clothing.css">
+	</head>
+
+	<body>
+		
+		<body>
+		
+			<!-- SECTION 1: WELCOME TO THE SITE -->
+			<div id="welcome" class="white-strip">
+				<!-- <img id="logo" src="images/svcrafted_logo_2.png" alt="SVCrafted logo. A digital drawing of a sun setting over waves"/> -->
+				<h1 id="welcome-header">SVCRAFTED</h1>	
+				<h2>This page is under construction.</h2>
+			</div>
+			
+			<!--  -->
+			<!--  -->
+			<!--  -->
+			<!--  -->
+			<!--  -->
+	
+			<!-- SECTION 2: NAVIGATION BAR -->
+			<div id="menu" name="menu">
+				<ul id="menu-list">
+					
+					<!-- Item #2: Home Page -->
+					<li> <a href="index.html" class="menu-item">Home</a> </li>						
+					
+					<!-- Item #3: Shop (Dropdown) -->
+					<li id="dropdown-shop" class="dropdown"> 
+						<a class="menu-item dropdown-item" href="javascript:void(0)">Shop</a> 
+						<div id="dropdown-shop-items" class="dropdown-list">
+							<a href="shop_all_products.html">All Products</a>
+							<a href="shop_sales.html">Sales + Bundles</a>
+							<a href="shop_clothing.html">Clothing</a>
+							<a href="shop_stickers.html">Stickers</a>
+							<a href="shop_stationery.html">Stationery</a>
+						</div>
+					</li>
+	
+					<!-- Item #4: Need Help? -->
+					<li id="dropdown-help" class="dropdown"> 
+						<a class="menu-item dropdown-item" href="javascript:void(0)">Need Help?</a> 
+						<div id="dropdown-help-items" class="dropdown-list">
+							<a href="help_FAQ.html">FAQ</a>
+						</div>
+					</li>
+	
+					<!-- Item #5: Custom Orders -->
+					<li id="dropdown-custom" class="dropdown"> 
+						<a class="menu-item dropdown-item" href="javascript:void(0)">Custom Orders</a> 
+						<div id="dropdown-custom-items" class="dropdown-list">
+							<a href="custom_clothing.html">Clothing</a>
+							<a href="custom_stickers.html">Stickers</a>
+						</div>
+					</li>
+	
+					<!-- Item #6: Bulk Orders -->
+					<li id="dropdown-bulk" class="dropdown"> 
+						<a class="menu-item dropdown-item" href="javascript:void(0)">Bulk Orders</a> 
+						<div id="dropdown-bulk-items" class="dropdown-list">
+							<a href="bulk_clothing.html">Clothing</a>
+							<a href="bulk_stickers.html">Stickers</a>
+						</div>
+					</li>					
+				</ul>
+			</div>
+		
+		<hr>
+		
+		<!-- SECTION 2: CONTACT TABLE + FORM -->
+		<div id="contactMe" name="contactMe">
+			<h2>Contact Me!</h2>
+			
+			<p>If you'd like to contact me, you can expect a response within 1-2 business days!</p>
+			
+			<!-- Table -->
+			<h3>You can contact me via any external communication methods:</h3>
+			<table border="1">
+				<tr>
+					<td>Email</td>
+					<td>sophie.victoria.373@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Phone #</td>
+					<td>(289)-834-4469</td>
+				</tr>
+				<tr>
+					<td>Instagram</td>
+					<td>@svcrafted</td>
+				</tr>
+			</table>
+			
+			<h3>Or, you can send me a direct email by filling out the form below:</h3>
+			
+			<!-- Form -->
+			<form id="ContactForm" target="_blank" action="mailto:ciards1@mcmaster.ca" method="post" enctype="application/x-www-form-urlencoded">
+				
+				<label for="full_name">Full name:</label></br>
+				<input type="text" id="full_name"></br><br>
+				
+				<label for="subject">Subject:</label></br>
+				<input type="text" id="subject"></br></br>
+				
+				<label for="email">Email:</label></br>
+				<input type="email" id="email"></br></br>
+				
+				<label for="message">Message:</label></br>
+				<textarea id="message" name="text area" rows="10" cols="30"></textarea></br></br>
+				
+				<input type="submit" id="submit" value="Submit"></br>
+				
+			</form>
+			
+		</div>
+		
+		<hr>
+		
+		<p>Sophie Ciardullo, 06/15/2021</p>
+		
+	</body>
+</html>
