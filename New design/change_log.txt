@@ -1,11 +1,33 @@
-BRAIN DUMP:
+TODO - SECTION 1:
 > For some reason it looks like some blue underline is showing up between the social
   icon images in the centre of the screen
+> fix crop for facebook icon
+> Add dropdown arrow to header "shop" button
+> The buttons on the home screen get messed up on small screen sizes
 
-SECTION 1:
+
+TODO - SECTION 2:
+> Why is there a space between the image and border lol
+> Fix "message from owner" layout
+> Should I still do circle crop image? try out on figma/get input
+
+-
+-
+-
+
+
+CHANGES:
+> Added webpage icon to be business logo
+
+
+SECTION 1 - HERO:
 > Idea of header has completely changed
 > Only one dropdown tab (rather than 3)
 > Custom and bulk tabs have been completely removed from website plan
 > Hero section added
 > Images are no longer in <p></p> tag... why?
 > Creating new "About" page
+
+
+SECTION 2 - ABOUT SVCRAFTED:
+> 
