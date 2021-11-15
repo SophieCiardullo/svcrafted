@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.neuton {
+  font-family: "Neuton", serif;
+}
+
+.white-text {
+  color: white;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  height: 10vh;
+}
+
+#header-left {
+  margin-left: 20px;
+  float: left;
+  filter: opacity(100%);
+  transition: filter 0.1s;
+}
+
+#header-right {
+  margin-right: 20px;
+  float: right;
+}
+
+#header-logo-circle {
+  height: 9vh;
+  vertical-align: middle;
+}
+
+#header-logo {
+  height: 6vh;
+  vertical-align: middle;
+}
+
+#header-left:hover {
+  filter: opacity(50%);
+  transition: filter 0.1s;
+}
+
+.header-link-basic {
+  font-family: "Neuton", serif;
+  font-size: 15pt;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 3vh;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 100%;
+  transition: opacity 0.1s;
+}
+
+.header-link-basic:hover {
+  opacity: 50%;
+  transition: opacity 0.1s;
+}
