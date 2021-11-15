@@ -1,3 +1,28 @@
+/* HEADER */
+
+.header-button {
+    text-decoration: none;
+    color: rgba(47, 60, 84, 1);
+    font-family: "Neuton", serif;
+    padding: 5px 40px 8px 40px; /* top right bottom left (order) */
+    border: 1px solid rgba(47, 60, 84, 1);
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 16pt;
+    margin-left: 3px;
+    margin-right: 3px;
+    transition: background-color 0.1s;
+}
+
+.header-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    transition: background-color 0.1s;
+}
+
+/* */
+/* */
+/* SECTION 1: HERO */
+
 #hero-section {
     width: 100%;
     height: 100vh;
@@ -71,29 +96,10 @@
     transition: filter 0.25s;
 }
 
-.header-button {
-    text-decoration: none;
-    color: rgba(47, 60, 84, 1);
-    font-family: "Neuton", serif;
-    padding: 5px 40px 8px 40px; /* top right bottom left (order) */
-    border: 1px solid rgba(47, 60, 84, 1);
-    background-color: rgba(255, 255, 255, 0.8);
-    font-size: 16pt;
-    margin-left: 3px;
-    margin-right: 3px;
-    transition: background-color 0.1s;
-}
-
-.header-button:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: white;
-    transition: background-color 0.1s;
-}
-
 
 /* */
 /* */
-/* */
+/* SECTION 2: MESSAGE FROM THE OWNER */
 
 #about-strip {
     width: 100%;
@@ -101,6 +107,11 @@
     background-color: rgba(255, 255, 255, 1);
     padding: 0;
     overflow: hidden;
+}
+
+#about-title {
+    color: rgba(47, 60, 84, 1);
+    text-align: center;
 }
 
 #about-left-col {
@@ -118,19 +129,6 @@
     border-color: rgba(47, 60, 84, 1);
 }
 
-#shop-strip-1 {
-    width: 100%;
-    height: 50vh;
-    background-color: rgba(47, 60, 84, 1);
-    padding: 0;
-    margin: 0;
-}
-
-#about-title {
-    color: rgba(47, 60, 84, 1);
-    text-align: center;
-}
-
 #about-right-col {
     width: 50%;
     float: right;
@@ -143,29 +141,186 @@
     color: rgba(47, 60, 84, 1);
 }
 
-.button-2 {
-    text-decoration: none;
+/* */
+/* */
+/* SECTION 3: SHOP BY CATEGORY */
+
+#shop-strip-1 {
+    width: 100%;
+    height: 52vh;
+    background-color: rgba(47, 60, 84, 1);
+    padding: 0;
+    overflow: hidden;
+}
+
+#shop-1-title {
+    text-align: center;
     color: rgba(255, 255, 255, 1);
-    font-family: "Neuton", serif;
-    padding: 5px 40px 8px 40px; /* top right bottom left (order) */
-    border: 1px solid rgba(47, 60, 84, 1);
-    background-color: rgba(47, 60, 84, 0.75);
-    font-size: 16pt;
-    margin-left: 3px;
-    margin-right: 3px;
-    transition: background-color 0.2s;
 }
 
-.button-2:hover {
-    background-color: rgba(47, 60, 84, 0.1);
+#shop-1-left-col {
+    display: block;
+    width: 25vw;
+    padding-top: 2vh;
+    float: left;
+    margin-right: 6vw;
+    margin-left: 6vw;
+}
+
+#shop-1-left-photo {
+    width: 60%;
+    height: auto;
+    border: 2pt;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#shop-1-left-button, #shop-1-middle-button, #shop-1-right-button {
+    width: 60%;
+    height: auto;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    text-align: center;
+
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#shop-1-middle-col {
+    display: block;
+    width: 25vw;
+    padding-top: 2vh;
+    float: left;
+    margin-right: 6vw;
+}
+
+#shop-1-middle-photo {
+    width: 60%;
+    height: auto;
+    border: 2pt;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#shop-1-right-col {
+    display: block;
+    width: 25vw;
+    padding-top: 2vh;
+    float: left;
+}
+
+#shop-1-right-photo {
+    width: 60%;
+    /* height: 35vh; */
+    height: auto;
+    border: 2pt;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* */
+/* */
+/* SECTION 4: SHOP BY COLLECTION */
+
+#shop-strip-2 {
+    width: 100%;
+    height: 52vh;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0;
+    overflow: hidden;
+}
+
+#shop-2-title {
+    text-align: center;
     color: rgba(47, 60, 84, 1);
-    transition: background-color 0.2s;
 }
 
-/* */
-/* */
-/* */
+#shop-2-left-col {
+    display: block;
+    width: 25vw;
+    padding-top: 2vh;
+    float: left;
+    margin-right: 6vw;
+    margin-left: 6vw;
+}
 
-h1 {
-    font-weight: normal;
+#shop-2-left-photo {
+    width: 60%; 
+    height: auto;
+    border: 2pt;
+    border-style: solid;
+    border-color: rgba(47, 60, 84, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#shop-2-left-button, #shop-2-middle-button, #shop-2-right-button {
+    width: 60%;
+    height: auto;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    text-align: center;
+
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#shop-2-middle-col {
+    display: block;
+    width: 25vw;
+    padding-top: 2vh;
+    float: left;
+    margin-right: 6vw;
+}
+
+#shop-2-middle-photo {
+    width: 60%;
+    height: auto;
+    border: 2pt;
+    border-style: solid;
+    border-color: rgba(47, 60, 84, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#shop-2-right-col {
+    display: block;
+    width: 25vw;
+    padding-top: 2vh;
+    float: left;
+}
+
+#shop-2-right-photo {
+    width: 60%;
+    /* height: 35vh; */
+    height: auto;
+    border: 2pt;
+    border-style: solid;
+    border-color: rgba(47, 60, 84, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -11,6 +11,21 @@ TODO - SECTION 2:
 > Fix "message from owner" layout
 > Should I still do circle crop image? try out on figma/get input
 
+
+TODO - SECTION 3:
+> Same weird space between border and image
+> Should I even put borders? idk.
+> Why does the center image not look horizontally-aligned with the title above it, which is supposed to be centered?
+> Change photo for clothing
+
+
+TODO - SECTION 4:
+> Create separate pages for collections
+> Replace photo for mental health collection
+> Minimize overlap between shop1 and shop2 classes
+> Make sure tote bag image is square and header
+
+
 -
 -
 -
