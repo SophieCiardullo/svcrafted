@@ -1,3 +1,4 @@
+
 <!-- COMP 266: Unit 2 -->
 <!-- Sophie Ciardullo - 06/15/2021 -->
 
@@ -41,88 +42,72 @@
 		<!--  -->
 
 		<!-- SECTION 2: NAVIGATION BAR -->
-		<div id="menu" class="blue-strip">
-			<ul id="menu-list">
-				
-				<!-- Item #2: Home Page -->
-				<li> <a href="index.html" class="menu-item">Home</a> </li>						
-				
-				<!-- Item #3: Shop (Dropdown) -->
-				<li id="dropdown-shop" class="dropdown"> 
-					<a class="menu-item dropdown-item" href="javascript:void(0)">Shop</a> 
-					<div id="dropdown-shop-items" class="dropdown-list">
-						<a href="shop_all_products.html">All Products</a>
-						<a href="shop_sales.html">Sales + Bundles</a>
-						<a href="shop_clothing.html">Clothing</a>
-						<a href="shop_stickers.html">Stickers</a>
-						<a href="shop_stationery.html">Stationery</a>
-					</div>
-				</li>
+		<div class="navbar">
+			<!-- "Home" tab -->
+			<!-- <a href="index.html">Home</a> -->
+			
+			<div class="dropdown">
 
-				<!-- Item #4: Need Help? -->
-				<li id="dropdown-help" class="dropdown"> 
-					<a class="menu-item dropdown-item" href="javascript:void(0)">Need Help?</a> 
-					<div id="dropdown-help-items" class="dropdown-list">
-						<a href="help_FAQ.html">FAQ</a>
-					</div>
-				</li>
+				<button class="dropbtn">Home
+					<i class="dropitem"></i>
+				</button>
 
-				<!-- Item #5: Custom Orders -->
-				<li id="dropdown-custom" class="dropdown"> 
-					<a class="menu-item dropdown-item" href="javascript:void(0)">Custom Orders</a> 
-					<div id="dropdown-custom-items" class="dropdown-list">
-						<a href="custom_clothing.html">Clothing</a>
-						<a href="custom_stickers.html">Stickers</a>
-					</div>
-				</li>
+			</div>
 
-				<!-- Item #6: Bulk Orders -->
-				<li id="dropdown-bulk" class="dropdown"> 
-					<a class="menu-item dropdown-item" href="javascript:void(0)">Bulk Orders</a> 
-					<div id="dropdown-bulk-items" class="dropdown-list">
-						<a href="bulk_clothing.html">Clothing</a>
-						<a href="bulk_stickers.html">Stickers</a>
-					</div>
-				</li>					
-			</ul>
-		</div>
+			<!-- "Shop" dropdown tab -->
+			<div class="dropdown">
 
-		<!--  -->
-		<!--  -->
-		<!--  -->
-		<!--  -->
-		<!--  -->
+				<button class="dropbtn">Shop
+					<i class="dropitem"></i>
+				</button>
 
-		<!-- SECTION 3: IMAGE STRIP -->
-		<div id="img-strip-container">
-			<img id="img-stickers" src="images/index-stickers.jpg"/>
-			<img id="img-stationery" src="images/index-stationery.jpg"/>
-			<img id="img-bulk" src="images/index-bulk.jpg"/>
-		</div>		
+				<div class="dropdown-content">
+					<a href="shop_all_products.html">All Products</a>
+					<a href="shop_sales.html">Sales + Bundles</a>
+					<a href="shop_clothing.html">Clothing</a>
+					<a href="shop_stickers.html">Stickers</a>
+					<a href="shop_stationery.html">Stationery</a>
+				</div>
 
-		<!-- CAPTION CONTAINERS IDK -->
-		
-
-		<!--  -->
-		<!--  -->
-		<!--  -->
-		<!--  -->
-		<!--  -->
-
-		<!-- SECTION 4: ABOUT THE BRAND -->
-		<div id="introduction" class="container-side-by-side grey-strip">			
-			<div id="introduction-img-container">
-				<img id="introduction-img" src="images/photo_of_me_3.jpg" alt="21-year old female with brown hair wearing a custom green crewneck standing outside smiling."/>
 			</div>
 			
-			<div id="introduction-text" class="text">
-				<h2>ABOUT THE BRAND</h2>
-				
-				<p> <br/> My name is Sophie Ciardullo; I'm a fifth year Computer Engineering student with a love for bringing joy into people's lives and putting my creativity into action.
-					I started SVCrafted in January 2021 as a small business that offers quality customized clothing and gift items...
-				</p>
+			<!-- "Need Help?" dropdown tab -->
+			<div class="dropdown">
 
-				<p id="learn-more">Learn More</p>		
+				<button class="dropbtn">Need Help?
+					<i class="dropitem"></i>
+				</button>
+
+				<div class="dropdown-content">
+					<a href="help_FAQ.html">FAQ</a>
+				</div>
+
+			</div>
+
+			<!-- "Custom Orders" dropdown tab -->
+			<div class="dropdown">
+
+				<button class="dropbtn">Custom Orders
+					<i class="dropitem"></i>
+				</button>
+
+				<div class="dropdown-content">
+					<a href="custom_clothing.html">Clothing</a>
+					<a href="custom_stickers.html">Stickers</a>
+				</div>
+			</div>
+
+			<!-- "Custom Orders" dropdown tab -->
+			<div class="dropdown">
+
+				<button class="dropbtn">Bulk Orders
+					<i class="dropitem"></i>
+				</button>
+
+				<div class="dropdown-content">
+					<a href="bulk_clothing.html">Clothing</a>
+					<a href="bulk_stickers.html">Stickers</a>
+				</div>
 			</div>
 		</div>
 
@@ -131,57 +116,6 @@
 		<!--  -->
 		<!--  -->
 		<!--  -->
-
-		<!-- SECTION 4: CONNECT WITH ME -->
-		<div id="socials white-strip container-side-by-side">
-			<h2>Connect With Me!</h2>
-			<p id="socials-paragraph">
-				<a href="https://instagram.com/svcrafted"><img id="socials-insta" height="75" width="75" src="images/socials-insta.png"/></a>
-				<a href="https://www.etsy.com/ca/shop/SVCrafted?ref=simple-shop-header-name&listing_id=805961352"><img id="socials-etsy" height="75" width="75" src="images/socials-etsy.png"/></a>
-				<a href="https://www.facebook.com/svcrafted-101197558623810"><img id="socials-facebook" height="75" width="75" src="images/socials-facebook.png"/></a>
-			</p>
-			<p id="contact-text">If you'd like to contact me, you can expect a response within 1-2 business days!</p>
-			<table id="contact-table" border="1">
-				<tr>
-					<td id="email-label">Email</td>
-					<td id="email">sophie.victoria.373@gmail.com</td>
-				</tr>
-				<tr>
-					<td id="phone-label">Phone #</td>
-					<td id="phone">(289)-834-4469</td>
-				</tr>
-			</table>
-		</div>
-
-		<!--  -->
-		<!--  -->
-		<!--  -->
-		<!--  -->
-		<!--  -->
-
-		<!-- SECTION 5: CONTACT FORM -->
-		<div id="contact-part2" class="green-strip">
-			<h3 id="contact-email-header">Or, you can send me a direct email by filling out the form below:</h3>
-			
-			<form id="contact-form" target="_blank" action="mailto:ciards1@mcmaster.ca" method="post" enctype="application/x-www-form-urlencoded">
-				
-				<label for="full_name">Full name:</label></br>
-				<input type="text" id="full_name"></br><br>
-				
-				<label for="subject">Subject:</label></br>
-				<input type="text" id="subject"></br></br>
-				
-				<label for="email">Email:</label></br>
-				<input type="email" id="email"></br></br>
-				
-				<label for="message">Message:</label></br>
-				<textarea id="message" name="text area" rows="10" cols="30"></textarea></br></br>
-				
-				<input type="submit" id="submit" value="Submit"></br>
-				
-			</form>
-			
-		</div>
 		
 		<p id="footer">Sophie Ciardullo, 06/27/2021</p>
 		

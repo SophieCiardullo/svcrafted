@@ -1,3 +1,4 @@
+
 /* RESOURCES
 https://www.w3schools.com/cssref/pr_pos_z-index.asp
 https://www.w3schools.com/css/css_positioning.asp
@@ -30,7 +31,7 @@ https://www.w3schools.com/tags/att_a_target.asp
 /*  */
 /*  */
 
-body{
+body {
 	margin: 0px;
 	padding: 0px;
 	font-family: "Segoe UI", "Georgia", "Times New Roman", "serif";
@@ -44,7 +45,7 @@ body{
 
 /* SECTION 1: WELCOME STRIP */
 
-#header-container { display: flex; height: 15vh; padding-top: 0;} /* Welcom strip at the top to include logo, title, and socials bar (on every page) */
+#header-container { display: flex; height: 15vh; padding-top: 0;} /* Welcome strip at the top to include logo, title, and socials bar (on every page) */
 
 #header-logo-container {flex: 16%; padding-top: 0;}
 #header-logo { padding-left: 2vh; top: auto; bottom: auto; height: 11vh; width: auto;  float: left; } /* Logo that is included in welcome strip ^ */
@@ -58,6 +59,7 @@ body{
 #header-etsy { float: left; padding: 6vh 0vh; height: 3vh; width: auto;}
 
 #header-padding { flex: 4%; }
+
 /*  */
 /*  */
 /*  */
@@ -66,290 +68,78 @@ body{
 
 /* SECTION 2: DROPDOWN MENU */
 
-#menu { /* WORKS */
-	/* The full-width background colour across the top */
+/* */
+/* */
+/* */
+/* */
+/* */
+
+.navbar {
+	overflow: hidden;
 	background-color: #b8f3ff;
-	
-	margin: 0;
-	padding: 0;
-	
-	width: 100%;
 	height: 7vh;
-
-	z-index: 1;
-	position: relative;
-	display: inline-block;
-
-	align-items: center;
 }
 
-#menu-list { /* WORKS */
-	/* Placement of menu item boxes relative to full-width menu background */
-	list-style-type: none; /* remove bullets */
-
-	margin: 0;
-	padding: 0;	
-}
-
-.menu-item { /* WORKS */
-	/* All menu items that are not dropdowns (In this case, only "Home" */
-
-	background-color: #b8f3ff;
-
-	/* This clears the hyperlink formatting for the text */
-	color: #373A36; 
-	font-size: 12pt;
-	text-decoration: none; 
-
-	/* Text positioning */
-	line-height: 7vh;
+.navbar a {
+	float: left;
+	color: #373A36;
+	font-size: 11pt;
 	text-align: center;
-
-	/* float: left; */
-	display: block; 
-	align-items: center;
-
-	margin: 0;
-	padding-top: 0;
-
-	width: 150px;
 	height: 7vh;
-
-}
-
-.menu-item:hover { /* WORKS */
-	background-color: #b8f3ff;
-	color: #8f8f8f;
-}
-
-.dropdown { /* WORKS */ display: inline-block; }
-
-.dropdown-list { /* WORKS */
-	background-color: #b8f3ff;
-	color: #373A36;
-
-	padding-top: 7vh;
-	display: none;
-	text-align: center;
-}
-
-.dropdown-list a { /* WORKS */
-	color: #373A36;
+	width: 20vw;
 	text-decoration: none;
-
-	padding: 12px 16px;
-	display: block;
-	text-align: center;
 }
 
-.dropdown-list a:hover { color: #8f8f8f; }
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
 
-/* WORKS */
-/* These need to be separate because the different menu items have different lists that appear on hover */
-#dropdown-shop:hover #dropdown-shop-items { display: block;}
-#dropdown-help:hover #dropdown-help-items { display: block;}
-#dropdown-custom:hover #dropdown-custom-items { display: block; }
-#dropdown-bulk:hover #dropdown-bulk-items { display: block;}
+.dropdown .dropbtn {
+	border: none;
+	outline: none;
+	color:#373A36;
+	font-size: 12pt;
+	width: 20vw;
+	height: 7vh;
+	background-color: inherit;
+	margin: 0; /* Important for vertical align on mobile phones, apparently */
+}
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: rgb(215, 249, 255);
+}
 
-/* SECTION 3: IMAGE STRIP */
-
-#img-strip-container { /* WORKS */
-	padding: 0;
+.dropdown-content{
+	display: none;
 	margin: 0;
-
-	display: flex;
-	height: 45vh;
-	align-items: center;
-	justify-content: space-between;
-	position: relative;
-
-	padding-top: 10px;
-	padding-bottom: 15px;
-	padding-left: 5px;
-}
-
-#img-stickers, #img-stationery, #img-bulk {
-	height: 45vh;
-	width: 10px;
-
-	flex: 20%;
-	object-fit: cover;
-	justify-content: space-around;
-
-	margin: 0;
-	padding: 10px;
-} 
-
-#img-captions-container 
-{
-	margin:0;
-	padding:0;
-
-	display: flex;
-	height: 45vh;
-	justify-content: space-between;
-
-	position: relative;
-	padding-top: 10px;
-	padding-bottom: 15px;
-	padding-left: 5px;
-
-	z-index: 1;
-	text-align: center;
-}
-
-#img-stickers-caption 
-{
-	height: 45vh;
-	flex: 20%;
-	justify-content: space-around;
-}
-#img-stickers:hover, #img-stationery:hover, #img-bulk:hover {
-	opacity: 50%;
-	transition: 0.5s;
-}
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-/* SECTION 4: ABOUT THE BRAND */
-
-.container-side-by-side { /* WORKS */
-	margin: 5vh 0vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	position: absolute;
+	background-color: #f9f9f9;
+	width: 20vw;
+	box-shadow: 0vh 1vh 2vh 0vh rgba(0,0,0,0.2);
+	z-index: 10;
 }
 
-#introduction { /* WORKS */
-	position: relative;
-	padding: 25px;
-}
-
-#introduction-img-container { /* WORKS */
-	width: 30%;
-	text-align: center;
-	margin-left: auto;
-	display: inline-block;
-}
-
-#introduction-img { /* WORKS */
-	height: 30vh;
-	width: auto;
-	border-radius: 50%;
-	margin: 0;
-	padding: 0;
-
-	border-width: 7px;
-	border-image: none;
-	border-style: solid;
-	border-radius: 50% 50% 50% 50%;
-	height: 30vh;
-	width: auto;
-	border-color: #ffb9b9;
-}
-
-#introduction-text { /* WORKS */
-	display: inline-block;
-	vertical-align: middle;
-	width: 55%;
-
-	margin-bottom: 0;
-	margin-right: auto;
-	padding-bottom: 0;
-}
-
-#learn-more { /* WORKS */ 
-	text-align: center; 
-	width: 100%;
-}
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-/* SECTION 5: CONNECT WITH ME */
-
-#socials { /* WORKS */
-	align-items: center;
-	text-align: center;
-}
-
-#socials-paragraph { /* WORKS */
-	padding: 10px 0px;
-	text-align: center;
-}
-
-#contact-text { /* WORKS */
+.dropdown-content a{
 	display: block;
+	float: none;
+
+	color: #373a36;
+	font-size: 11pt;
+	text-decoration: none;
 	text-align: center;
-	width:100%;
+	
+	width: 20vw;
+	height: 4vh;
 }
 
-#contact-table { /* WORKS */
-	border-collapse: collapse;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 2vh;
+.dropdown-content a:hover{
+	background-color: #ddd;
 }
 
-#contact-table td { /* WORKS */
-	padding: 5px;
-	background-color: #FFFFFF;
+.dropdown:hover .dropdown-content{
+	display:block;
 }
-
-#contact-table tr:hover { /* WORKS */ background-color: #f4ffbd; }
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-/* SECTION 6: CONTACT FORM */
-
-#contact-email-header {
-	padding-top: 2vh;
-}
-
-#contact-part2 {
-	display: block;
-	text-align: center;
-}
-
-#contact-form {
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-#full_name, #subject, #email, #message {
-	width: 40vh;
-}
-
-#submit {
-	background-color: #FFFFFF;
-	color: #373A36;
-	padding: 1vh 2vh;
-	margin-bottom: 2vh;
-	border-width: 1pt;
-	border-color: #373a36;
-}
-
-#footer {text-align: center; }
 
 /*  */
 /*  */
