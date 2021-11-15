@@ -1,0 +1,11 @@
+BRAIN DUMP:
+> For some reason it looks like some blue underline is showing up between the social
+  icon images in the centre of the screen
+
+SECTION 1:
+> Idea of header has completely changed
+> Only one dropdown tab (rather than 3)
+> Custom and bulk tabs have been completely removed from website plan
+> Hero section added
+> Images are no longer in <p></p> tag... why?
+> Creating new "About" page
