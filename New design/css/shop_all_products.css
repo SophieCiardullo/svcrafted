@@ -1,0 +1,158 @@
+/* */
+/* */
+/* */
+/* HEADER */
+
+#header-all-products {
+    width: 100%;
+    position: fixed;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    /* add background colour to header after the user scrolls past the hero image */
+}
+
+/* */
+/* */
+/* */
+/* HERO SECTION */
+
+#hero-section-all-products {
+    width: 100%;
+    height: 50vh;
+    background-image: url("../images/tote_5.jpeg"); /* take new image of all products */
+    background-size: cover; /* For proper scaling of HERO image */
+}
+
+#center-content-all-products {
+    width: 33%;
+    padding-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* */
+/* */
+/* */
+/* STICKERS */
+
+#all-products-strip-first {
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(47, 60, 84, 1);
+    padding: 0;
+    padding-top: 3vh;
+    overflow: hidden;
+}
+
+#all-products-strip {
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(47, 60, 84, 1);
+    padding: 0;
+    padding-top: 2vh;
+    overflow: hidden;
+}
+
+#all-products-strip-final {
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(47, 60, 84, 1);
+    padding: 0;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    overflow: hidden;
+}
+
+#all-products-left-col, #all-products-middle-col {
+    display: block;
+    width: 21vw;
+    padding-top: 2vh;
+    float: left;
+    margin-right: 6vw;
+    margin-left: 6vw;
+}
+
+#all-products-right-col {
+    display: block;
+    width: 21vw;
+    padding-top: 2vh;
+    float: left;
+    margin-right: 5vw;
+    margin-left: 6vw;
+}
+
+#all-products-left-photo, #all-products-middle-photo, #all-products-right-photo {
+    width: 80%;
+    height: auto;
+    border: 2pt;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#all-products-left-text, #all-products-middle-text, #all-products-right-text {
+    width: 90%;
+    height: 2vh;;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    text-align: center;
+
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* */
+/* */
+/* */
+/* STICKERS */
+#contact-strip {
+    width: 100%;
+    height: 53vh;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0;
+    overflow: hidden;
+    padding-top: 1vh;
+    text-align: center;
+}
+
+#contact-title {
+    color: rgba(47, 60, 84, 1);
+    text-align: center;
+}
+
+#contact-buttons {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-button {
+    text-decoration: none;
+    color: rgba(47, 60, 84, 1);
+    font-family: "Neuton", serif;
+    padding: 7px 30px 8px 30px; /* top right bottom left (order) */
+    border: 1px solid rgba(47, 60, 84, 1);
+    background-color: rgba(47, 60, 84, 0.25);
+    font-size: 16pt;
+    margin-left: 3px;
+    margin-right: 3px;
+    transition: background-color 0.1s;
+}
+
+.contact-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: background-color 0.1s;
+}
+
+p {
+    text-align: center;
+}

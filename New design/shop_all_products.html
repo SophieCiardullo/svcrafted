@@ -1,144 +1,176 @@
-<!-- COMP 266: Unit 2 -->
-<!-- Sophie Ciardullo - 06/15/2021 -->
+<!-- COMP 266: Unit 3 -->
+<!-- Sophie Ciardullo - 11/29/2021 -->
+
+<!-- When JS is implemented, user will be able to sort products based on price and filter based on category/collection -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <html>
 	<head>
-		<title>Shop</title>
-	</head>
+        <title>Shop</title>
+
+        <!-- Set Webpage Icon -->
+        <link rel="icon" href="images/logo_transparent.png" />
+
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="css/lib.css" />
+		<link rel="stylesheet" href="css/shop_all_products.css" />
+		<link rel="stylesheet" href="css/index.css" />
+
+        <!-- Load "Neuton" font from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Neuton&display=swap" rel="stylesheet">
+    </head>
 
 	<body>
-		
-		<img src="images/svcrafted_logo_2.png" height="150" alt="SVCrafted logo. A digital drawing of a sun setting over waves">
-		
-		<!-- SECTION 1: NAVIGATION BAR -->
-		<div id="menu" name="menu">
-			<h2>Menu</h2>
-			<ul>
-				<li><a href="index.html">Home</a></li>
 				
-				<li>Shop
-					<ul>
-						<li><a href="shop_all_products.html">All Products</a></li>
-						<li><a href="shop_sales.html">Sales + Bundles</a></li>
-						<li><a href="shop_clothing.html">Clothing</a></li>
-						<li><a href="shop_stickers.html">Stickers</a></li>
-						<li><a href="shop_stationery.html">Stationery</a></li>
-					</ul>
-				</li>
-				<li>Need Help?
-					<ul>
-						<li><a href="help_FAQ.html">FAQ</a></li>
-						<li><a href="help_sizing.html">Sizing + Care Instructions</a></li>
-						<li><a href="help_contact.html">Contact the Owner</a></li>
-					</ul>
-				</li>
-				<li><a href="custom.html">Custom Orders</a>
-					<ul>
-						<li><a href="custom_clothing.html">Clothing</a></li>
-						<li><a href="custom_stickers.html">Stickers</a></li>
-					</ul>
-				</li>
-				<li><a href="bulk.html">Bulk Orders</a>
-					<ul>
-						<li><a href="bulk_clothing.html">Clothing</a></li>
-						<li><a href="bulk_stickers.html">Stickers</a></li>
-					</ul>
-				</li>
-				
-			</ul>
+		<div id="hero-section-all-products">
+            
+            <!-- HEADER + HERO SECTION -->
+            <div id="header-all-products">
+                <!-- Top left to contain logo + business name -->
+                <div id="header-left">
+                    <a href="index.html">
+                        <img id="header-logo" src="images/Header_logo.png" alt="Image of SVCrafted logo: A digital drawing of a sun setting over waves." />
+                    </a>
+                </div>
+
+                <!-- Top right to contain navbar -->
+                <div id="header-right">
+                    <a href="index.html" class="header-link-basic">Home</a>
+                    <a href="about.html" class="header-link-basic">About</a>
+                    <a href="help_contact.html" class="header-link-basic">Contact</a>
+                    <a class="header-button" href="shop_all_products.html">Shop</a>>
+                </div>
+            </div>
+
+            <!-- OVERLAY IMAGE + CENTER TEXT/BUTTONS-->
+            <div id="hero-overlay">
+
+                <!-- Business name + buttons to link to "About" and "Shop all products" pages -->
+                <div id="center-content-all-products">
+					<!-- Replace this with the fancy font from canva -->
+					<h1 id="hero-subtitle" class="neuton white-text">Shop All Products</h1>
+                </div>
+            </div>
 		</div>
 		
-		<hr>
-		
-		<!-- SECTION 2: ALL PRODUCTS -->
-		<div id="products" name="products">
-		
-			<h2>Shop All Products</h2>
-			<p>On this page, you can browse all my products, from lowest price to highest.</p>
-			
-			<h3>Sticker | Forest Fox, $3<h3>
-			<img src="images/sticker_1.jpg" height="200" alt="Stickers shaped like a fox, digitally drawn to be filled in with forestry.">
-			
-			<h3>Sticker | "Life is Tough but So are You" | Pastel, $3<h3>
-			<img src="images/sticker_2.jpg" height="200" alt="Stickers with the quote, life is tough but so are you, drawn with pastel colours.">
-			
-			<h3>Sticker | "Life is Tough but So are You" | Neutral, $3<h3>
-			<img src="images/sticker_4.jpg" height="200" alt="Stickers with the quote, life is tough but so are you, drawn with neutral colours.">
-			
-			<h3>Sticker | "Thank You", $3<h3>
-			<img src="images/sticker_3.jpg" height="200" alt="Stickers which say thank you, written over a boho rainbow drawn with pastel colours">
-			
-			<h3>Notepad | "Make Today Count", $10<h3>
-			<img src="images/notepad_1.jpg" height="200" alt="Notepad with the quote, you will never have this day again so make it count, and full page neutral colours.">
-			
-			<h3>Notepad | "Dream Big", $10<h3>
-			<img src="images/notepad_2.jpg" height="200" alt="Notepad with the quote, if your dreams don't scare you they're not big enough, and full page pastel colours.">
-			
-			<h3>Tote Bag | Taylor Swift Eras, $25<h3>
-			<img src="images/tote_1.jpg" height="200" alt="Canvas tote bag with nine Taylor Swift album titles in black.">
-			
-			<h3>Tote Bag | Taylor Swift "folklore", $25<h3>
-			<img src="images/tote_2.jpg" height="200" alt="Young woman standing in forest with white tote bag, which says folklore with some trees in forest green.">
-			
-			<h3>Small Business Owner T-Shirt, $30</h3>
-			<img src="images/tshirt_1.jpg" height="200" alt="Young woman wearing mauve tee shirt which says small business owner in white.">
-			
+		<!-- ALL PRODUCTS: STRIP 1 -->
+		<div id="all-products-strip-first">
+
+            <!-- Left 1/3: photo + button -->
+            <div id="all-products-left-col">
+                <img id="all-products-left-photo" src="images/sticker_1.jpg" alt="Stickers shaped like a fox, digitally drawn to be filled in with forestry."/>
+				<h2 id="all-products-left-text" class="white-text">FOREST FOX STICKER</h2>
+				<h2 id="all-products-left-text" class="white-text">$3.50</h2>
+            </div>
+
+            <!-- Middle 1/3: photo + button -->
+            <div id="all-products-middle-col">
+                <img id="all-products-middle-photo" src="images/sticker_2.jpg" alt="Stickers with the quote, life is tough but so are you, drawn with pastel colours." />
+                <h2 id="all-products-middle-text" class="white-text">"LIFE IS TOUGH STICKER" | PASTEL</h2>
+				<h2 id="all-products-middle-text" class="white-text">$3.50</h2>
+            </div>
+
+            <!-- Right 1/3: photo + button -->
+            <div id="all-products-right-col">
+                <img id="all-products-right-photo" src="images/sticker_4.jpg" alt="Stickers with the quote, life is tough but so are you, drawn with neutral colours."/>
+                <h2 id="all-products-right-text" class="white-text">"LIFE IS TOUGH STICKER" | NEUTRAL</h2>
+				<h2 id="all-products-right-text" class="white-text">$3.50</h2>
+            </div>
+
+		</div>
+
+		<!-- ALL PRODUCTS: STRIP 2 -->
+		<div id="all-products-strip">
+
+            <!-- Left 1/3: photo + button -->
+            <div id="all-products-left-col">
+                <img id="all-products-left-photo" src="images/sticker_3.jpg" alt="Stickers which say thank you, written over a boho rainbow drawn with pastel colours."/>
+				<h2 id="all-products-left-text" class="white-text">THANK YOU STICKERS SET</h2>
+				<h2 id="all-products-left-text" class="white-text">$5.00 - $20.00</h2>
+            </div>
+
+            <!-- Middle 1/3: photo + button -->
+            <div id="all-products-middle-col">
+                <img id="all-products-middle-photo" src="images/notepad_1.jpg" alt="Notepad with the quote, you will never have this day again so make it count, and full page neutral colours." />
+                <h2 id="all-products-middle-text" class="white-text">"MAKE IT COUNT" NOTEPAD | NEUTRAL</h2>
+				<h2 id="all-products-middle-text" class="white-text">$10.00</h2>
+            </div>
+
+            <!-- Right 1/3: photo + button -->
+            <div id="all-products-right-col">
+                <img id="all-products-right-photo" src="images/notepad_2.jpg" alt="Notepad with the quote, if your dreams don't scare you they're not big enough, and full page pastel colours."/>
+                <h2 id="all-products-right-text" class="white-text">"MAKE IT COUNT" NOTEPAD | PASTEL</h2>
+				<h2 id="all-products-right-text" class="white-text">$10.00</h2>
+            </div>
+
+		</div>
+
+		<!-- ALL PRODUCTS: STRIP 3 -->
+		<div id="all-products-strip-final">
+
+            <!-- Left 1/3: photo + button -->
+            <div id="all-products-left-col">
+                <img id="all-products-left-photo" src="images/tote_1.jpg" alt="Canvas tote bag with nine Taylor Swift album titles in black."/>
+				<h2 id="all-products-left-text" class="white-text">TAYLOR SWIFT ERA TOTE</h2>
+				<h2 id="all-products-left-text" class="white-text">$20.00</h2>
+            </div>
+
+            <!-- Middle 1/3: photo + button -->
+            <div id="all-products-middle-col">
+                <img id="all-products-middle-photo" src="images/tote_3.jpg" alt="Young woman standing in forest with white tote bag, which says folklore with some trees in forest green." />
+                <h2 id="all-products-middle-text" class="white-text">TAYLOR SWIFT FOLKLORE TOTE</h2>
+				<h2 id="all-products-middle-text" class="white-text">$20.00</h2>
+            </div>
+
+            <!-- Right 1/3: photo + button -->
+            <div id="all-products-right-col">
+                <img id="all-products-right-photo" src="images/tshirt_1.jpg" alt="Young woman wearing mauve tee shirt which says small business owner in white."/>
+                <h2 id="all-products-right-text" class="white-text">SMALL BIZ OWNER TEE | MAUVE</h2>
+				<h2 id="all-products-right-text" class="white-text">$30.00</h2>
+            </div>
+
 		</div>
 		
-		<hr>
+		<!-- CONTACT STRIP -->
+		<div id="contact-strip">
+			<h1 id="contact-title">CONTACT ME</h1>
+			<h2 id="contact-title">If you'd like to contact me, you can expect a response within 1-2 business days!</h2>
+			<div id="contact-buttons">
+				<a class="contact-button" href="mailto:sophie.victoria.373@gmail.com">EMAIL</a>
+				<a class="contact-button" href="https://instagram.com/svcrafted">INSTAGRAM</a>
+				<a class="contact-button" href="https://www.etsy.com/ca/shop/SVCrafted?ref=simple-shop-header-name&listing_id=805961352">ETSY</a>
+				<a class="contact-button" href="https://www.facebook.com/profile.php?id=100009184460995">FACEBOOK</a>
+			</div>
+			<h3 id="contact-title">Or, you can send me a direct email by filling out the form below:</h3>
 		
-		<!-- SECTION 3: CONTACT TABLE + FORM -->
-		<div id="contactMe" name="contactMe">
-			<h2>Contact Me!</h2>
-			
-			<p>If you'd like to contact me, you can expect a response within 1-2 business days!</p>
-			
-			<!-- Table -->
-			<h3>You can contact me via any external communication methods:</h3>
-			<table border="1">
-				<tr>
-					<td>Email</td>
-					<td>sophie.victoria.373@gmail.com</td>
-				</tr>
-				<tr>
-					<td>Phone #</td>
-					<td>(289)-834-4469</td>
-				</tr>
-				<tr>
-					<td>Instagram</td>
-					<td>@svcrafted</td>
-				</tr>
-			</table>
-			
-			<h3>Or, you can send me a direct email by filling out the form below:</h3>
-			
 			<!-- Form -->
-			<form id="ContactForm" target="_blank" action="mailto:ciards1@mcmaster.ca" method="post" enctype="application/x-www-form-urlencoded">
+			<div id="contact-form-container">
+				<form id="contact-form" target="_blank" action="mailto:ciards1@mcmaster.ca" method="post" enctype="application/x-www-form-urlencoded">
 				
-				<label for="full_name">Full name:</label></br>
-				<input type="text" id="full_name"></br><br>
-				
-				<label for="subject">Subject:</label></br>
-				<input type="text" id="subject"></br></br>
-				
-				<label for="email">Email:</label></br>
-				<input type="email" id="email"></br></br>
-				
-				<label for="message">Message:</label></br>
-				<textarea id="message" name="text area" rows="10" cols="30"></textarea></br></br>
-				
-				<input type="submit" id="submit" value="Submit"></br>
-				
-			</form>
-			
+					<label for="full_name">Full name:</label></br>
+					<input type="text" id="full_name"></br><br>
+					
+					<label for="subject">Subject:</label></br>
+					<input type="text" id="subject"></br></br>
+					
+					<label for="email">Email:</label></br>
+					<input type="email" id="email"></br></br>
+					
+					<label for="message">Message:</label></br>
+					<textarea id="message" name="text area" rows="10" cols="30"></textarea></br></br>
+					
+					<input type="submit" id="submit" value="Submit"></br>
+				</form>
+			</div>
 		</div>
 		
 		<hr>
 		
-		<p>Sophie Ciardullo, 06/15/2021</p>
+		<p id="timestamp">Sophie Ciardullo, 11/29/2021</p>
 		
 	</body>
 </html>
